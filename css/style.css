@@ -1,0 +1,159 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.head {
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    color: white;
+}
+
+header {
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    color: white;
+    padding: 80px 0;
+}
+
+header h1 {
+    font-weight: 700;
+}
+
+.search-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category-card {
+    height: 25vh;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Events list page styles */
+.filter-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.event-card {
+    height: 100%;
+    transition: transform 0.2s ease;
+    border: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.event-card:hover {
+    transform: translateY(-3px);
+}
+
+.event-date {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.event-location {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.event-category {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.category-music {
+    background-color: #e3f2fd;
+    color: #0d6efd;
+}
+
+.category-sports {
+    background-color: #e8f5e9;
+    color: #198754;
+}
+
+.category-arts {
+    background-color: #fff3e0;
+    color: #fd7e14;
+}
+
+.category-food {
+    background-color: #ffebee;
+    color: #dc3545;
+}
+
+.category-tech {
+    background-color: #e8eaf6;
+    color: #6610f2;
+}
+
+/* Event details page styles */
+.event-banner {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.event-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6));
+}
+
+.event-banner-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    color: white;
+}
+
+.event-details-info {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.event-description {
+    line-height: 1.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        padding: 40px 0;
+    }
+    
+    .event-banner {
+        height: 200px;
+    }
+}
